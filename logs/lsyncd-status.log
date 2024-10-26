@@ -1,0 +1,61 @@
+Lsyncd status report at Sat Oct 26 00:03:04 2024
+
+Sync1 source=/sync/internal_data/
+There are 0 delays
+Filtering:
+  nothing.
+
+
+Sync2 source=/sync/data/
+There are 0 delays
+Filtering:
+  nothing.
+
+
+Inotify watching 46 directories
+  1: /sync/internal_data/
+  2: /sync/internal_data/sitemaps/
+  3: /sync/internal_data/temp/
+  4: /sync/internal_data/addon_batch/
+  5: /sync/internal_data/addon_batch/5/
+  6: /sync/internal_data/file_check/
+  7: /sync/internal_data/code_cache/
+  8: /sync/internal_data/code_cache/phrase_groups/
+  9: /sync/internal_data/code_cache/phrase_groups/l0/
+  10: /sync/internal_data/code_cache/phrase_groups/l1/
+  11: /sync/internal_data/code_cache/widgets/
+  12: /sync/internal_data/code_cache/templates/
+  13: /sync/internal_data/code_cache/templates/l0/
+  14: /sync/internal_data/code_cache/templates/l0/s0/
+  15: /sync/internal_data/code_cache/templates/l0/s0/public/
+  16: /sync/internal_data/code_cache/templates/l0/s0/email/
+  17: /sync/internal_data/code_cache/templates/l0/s0/admin/
+  18: /sync/internal_data/code_cache/templates/l0/s1/
+  19: /sync/internal_data/code_cache/templates/l0/s1/public/
+  20: /sync/internal_data/code_cache/templates/l0/s1/email/
+  21: /sync/internal_data/code_cache/templates/l1/
+  22: /sync/internal_data/code_cache/templates/l1/s0/
+  23: /sync/internal_data/code_cache/templates/l1/s0/public/
+  24: /sync/internal_data/code_cache/templates/l1/s0/email/
+  25: /sync/internal_data/code_cache/templates/l1/s0/admin/
+  26: /sync/internal_data/code_cache/templates/l1/s1/
+  27: /sync/internal_data/code_cache/templates/l1/s1/public/
+  28: /sync/internal_data/code_cache/templates/l1/s1/email/
+  29: /sync/data/
+  30: /sync/data/local/
+  31: /sync/data/local/icons/
+  32: /sync/data/assets/
+  33: /sync/data/assets/logo_alternate/
+  34: /sync/data/assets/logo/
+  35: /sync/data/assets/logo_default/
+  36: /sync/data/avatars/
+  37: /sync/data/avatars/m/
+  38: /sync/data/avatars/m/0/
+  39: /sync/data/avatars/s/
+  40: /sync/data/avatars/s/0/
+  41: /sync/data/avatars/l/
+  42: /sync/data/avatars/l/0/
+  43: /sync/data/avatars/o/
+  44: /sync/data/avatars/o/0/
+  45: /sync/data/avatars/h/
+  46: /sync/data/avatars/h/0/

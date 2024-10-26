@@ -1,0 +1,35 @@
+services:
+  rsyncd:
+    build:
+      context: ./rsyncd
+      dockerfile: Dockerfile
+    volumes:
+      - ../xenforo/xenforo/html/internal_data:/sync/internal_data
+      - ../xenforo/xenforo/html/data:/sync/data
+      - ./rsyncd/rsyncd.conf:/etc/rsyncd.conf
+    ports:
+      - "873:873"  # Expose rsync daemon port
+    networks:
+      - shared-network
+  lsyncd:
+    build:
+      context: ./lsyncd
+      dockerfile: Dockerfile
+    volumes:
+      - ../xenforo/xenforo/html/internal_data:/sync/internal_data
+      - ../xenforo/xenforo/html/data:/sync/data
+      - ./logs:/var/log/lsyncd
+      - ./lsyncd/lsyncd.conf:/etc/lsyncd/lsyncd.conf.lua  # Custom lsyncd config for peer syncing
+    networks:
+      - shared-network
+    deploy:
+      mode: global # Ensures the container is deployed across all nodes
+    environment:
+      - TARGET_IPS="192.168.2.2" #  Add new IPs here to expand sync network
+      - SYNC_INTERVAL=10  # Define sync interval in seconds
+
+networks:
+  proxy:
+    external: true
+  shared-network:
+    external: true
